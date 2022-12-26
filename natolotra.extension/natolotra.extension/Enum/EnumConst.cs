@@ -11,7 +11,6 @@ namespace natolotra.extension.Enum
         public const string ENUM_TO_INT_MESSAGE_ARG_EXC = "T must be an enumerated type";
         public const string ENUM_GET_DESC_MESSAGE_ARG_EXC = "T must be an enumerated type";
         public const string ENUM_GET_DESC_MESSAGE_ARG_NUL_EXC = "T must be an argument not null";
-        public const string ENUM_GET_ENUM_VALUE_MESSAGE_ARG_EXC = "T must be an enumerated type";
         public const string ENUM_GET_ENUM_VALUE_MESSAGE_ARG_VALUE_EXC = "T invalid value for enum";
     }
 }

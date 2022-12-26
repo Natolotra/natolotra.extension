@@ -61,9 +61,6 @@ namespace natolotra.extension.Enum
         /// <exception cref="ArgumentException">Argument exception if the argument is invalid value</exception>
         public static T GetEnumValue<T>(this string source) where T : struct, IConvertible
         {
-            if (!typeof(T).IsEnum)
-                throw new ArgumentException(EnumConst.ENUM_GET_ENUM_VALUE_MESSAGE_ARG_EXC);
-            
             T outResult;
             var boolRes = System.Enum.TryParse<T>(source, true, out outResult);
             if (boolRes)

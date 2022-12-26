@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "natolotra.extension", "natolotra.extension\natolotra.extension.csproj", "{0AFC6797-5774-452D-8708-B7578B15AF09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "natolotra.extension.test", "natolotra.extension.test\natolotra.extension.test.csproj", "{6C8C797D-BF81-4BD9-8769-91AF60FB0CDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0AFC6797-5774-452D-8708-B7578B15AF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AFC6797-5774-452D-8708-B7578B15AF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AFC6797-5774-452D-8708-B7578B15AF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8C797D-BF81-4BD9-8769-91AF60FB0CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8C797D-BF81-4BD9-8769-91AF60FB0CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8C797D-BF81-4BD9-8769-91AF60FB0CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8C797D-BF81-4BD9-8769-91AF60FB0CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
