@@ -43,8 +43,8 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Natolotra_natolotra.extension" /o:"natolotra" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet restore ./natolotra.extension/natolotra.extension/natolotra.extension.sln
-          dotnet build ./natolotra.extension/natolotra.extension/natolotra.extension.sln --configuration Release
-          dotnet test ./natolotra.extension/natolotra.extension/natolotra.extension.test/natolotra.extension.test.csproj --collect:"XPlat Code Coverage" --logger trx --results-directory $GITHUB_WORKSPACE/test/testresults
+          dotnet restore ./natolotra.extension/natolotra.extension.sln
+          dotnet build ./natolotra.extension/natolotra.extension.sln --configuration Release
+          dotnet test ./natolotra.extension/natolotra.extension.test/natolotra.extension.test.csproj --collect:"XPlat Code Coverage" --logger trx --results-directory $GITHUB_WORKSPACE/test/testresults
           reportgenerator -reports:$GITHUB_WORKSPACE/test/testresults/**/coverage.cobertura.xml -targetdir:$GITHUB_WORKSPACE/test/coverlet/reports -reporttypes:"SonarQube"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
